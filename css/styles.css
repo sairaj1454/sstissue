@@ -1,0 +1,245 @@
+/* Custom styles for Tissue World website */
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button hover effects */
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+/* Product card hover effect */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom focus styles */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Animation for fade-in elements */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom styles for active category button */
+.category-btn.active {
+    background-color: #1e40af;
+    color: white;
+}
+
+.category-btn {
+    transition: all 0.3s ease;
+}
+
+/* Custom styles for FAQ accordion */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-content.active {
+    max-height: 500px;
+}
+
+/* Custom styles for form elements */
+input,
+textarea,
+select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom styles for social media icons */
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Mobile menu styles */
+#mobile-menu {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-menu:not(.hidden) {
+    animation: slideDown 0.3s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#mobile-menu a {
+    transition: background-color 0.2s ease;
+    position: relative;
+}
+
+#mobile-menu a:hover {
+    background-color: #f9fafb;
+}
+
+#mobile-menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4A071C;
+    transition: width 0.3s ease;
+}
+
+#mobile-menu a:hover::after {
+    width: 100%;
+}
+
+/* Mobile menu button styles */
+#mobile-menu-button {
+    position: relative;
+    z-index: 50;
+    transition: transform 0.3s ease;
+}
+
+#mobile-menu-button:hover {
+    transform: rotate(90deg);
+}
+
+/* Custom image hover effect */
+.image-hover {
+    overflow: hidden;
+}
+
+.image-hover img {
+    transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1);
+}
+
+/* Custom styles for testimonials */
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom styles for feature icons */
+.feature-icon {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: rotateY(180deg);
+    background-color: #dbeafe;
+}
+
+/* Custom styles for CTA sections */
+.cta-section {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+}
+
+/* Custom styles for team member cards */
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom styles for product badges */
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #1e40af;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Custom styles for product pricing */
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e40af;
+}
+
+/* Custom styles for product specifications */
+.product-specs {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.product-specs span {
+    font-weight: 600;
+    color: #374151;
+}

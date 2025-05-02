@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Sri Sahasra Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md relative z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="mr-3">
+                    <div class="w-16 h-16 bg-[#4A071C] text-white flex items-center justify-center rounded-lg shadow-md font-bold text-2xl">
+                        <span class="relative">
+                            <span class="absolute -top-1 left-0">S</span>
+                            <span class="absolute -bottom-1 right-0">S</span>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-[#4A071C]">SRI SAHASRA</h1>
+                    <p class="text-sm text-gray-600">Tissue Products</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-[#8E1946]">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-[#8E1946]">About Us</a>
+                <a href="products.html" class="text-[#4A071C] font-medium hover:text-[#8E1946]">Products</a>
+                <a href="contact.html" class="text-gray-600 hover:text-[#8E1946]">Contact</a>
+            </nav>
+            <div class="md:hidden z-50">
+                <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-800 p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t shadow-lg absolute w-full z-40 left-0 right-0">
+            <div class="container mx-auto px-4 py-2">
+                <a href="index.html" class="block py-3 px-4 text-gray-600 border-b border-gray-100">Home</a>
+                <a href="about.html" class="block py-3 px-4 text-gray-600 border-b border-gray-100">About Us</a>
+                <a href="products.html" class="block py-3 px-4 text-[#4A071C] font-medium border-b border-gray-100">Products</a>
+                <a href="contact.html" class="block py-3 px-4 text-gray-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="animate-gradient text-white py-12 relative">
+        <div class="particle-container">
+            <!-- Particles will be added by JS -->
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl font-bold animate-on-scroll" data-animation="animate-slide-left">Our Products</h1>
+            <p class="text-xl mt-2 animate-on-scroll" data-animation="animate-slide-in">Discover our range of high-quality tissue products</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="category-btn active px-4 py-2 rounded-md bg-[#4A071C] text-white hover:bg-[#8E1946] shadow-sm">
+                    All Products
+                </button>
+                <button class="category-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-[#B54A71] shadow-sm">
+                    1 Ply Tissues
+                </button>
+                <button class="category-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-[#B54A71] shadow-sm">
+                    Hard Tissues
+                </button>
+                <button class="category-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-[#B54A71] shadow-sm">
+                    Soft Tissues
+                </button>
+                <button class="category-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-[#B54A71] shadow-sm">
+                    Premium Tissues
+                </button>
+                <button class="category-btn px-4 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-[#B54A71] shadow-sm">
+                    Printed Logo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12 bg-gray-50 pattern-dots">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow animate-on-scroll hover-grow" data-animation="animate-slide-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://csinc.ph/wp-content/uploads/2024/08/tissue-paper.jpg" alt="1 Ply Tissue Paper" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">1 Ply Tissue Paper</h3>
+                        <p class="text-gray-600 mb-4">Economical 1 ply tissue paper for everyday use in restaurants and homes.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Specifications:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><span class="font-medium">Size:</span> 27x30 cm</li>
+                                <li><span class="font-medium">Color:</span> White</li>
+                                <li><span class="font-medium">GSM:</span> 15-17 GSM</li>
+                                <li><span class="font-medium">Packaging:</span> Packet</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="bg-[#8E1946] text-white px-4 py-2 rounded-md hover:bg-[#B54A71] w-full shadow-sm">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow animate-on-scroll hover-grow" data-animation="animate-slide-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://csinc.ph/wp-content/uploads/2024/08/tissue-paper.jpg" alt="Hard Tissue Paper" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Hard Tissue Paper</h3>
+                        <p class="text-gray-600 mb-4">Durable hard tissue paper ideal for restaurants and commercial use.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Specifications:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><span class="font-medium">Size:</span> 10x10 cm</li>
+                                <li><span class="font-medium">Color:</span> White</li>
+                                <li><span class="font-medium">GSM:</span> 15-17 GSM</li>
+                                <li><span class="font-medium">Type:</span> Hard</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="bg-[#8E1946] text-white px-4 py-2 rounded-md hover:bg-[#B54A71] w-full shadow-sm">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow animate-on-scroll hover-grow" data-animation="animate-slide-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://2.wlimg.com/product_images/bc-full/2024/7/13510097/soft-tissue-paper-1721630692-7531164.jpg" alt="Soft Tissue Paper" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Soft Tissue Papers</h3>
+                        <p class="text-gray-600 mb-4">High-quality soft tissue papers for restaurants, hotels, and homes.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Specifications:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><span class="font-medium">Size:</span> 27x30 cm</li>
+                                <li><span class="font-medium">Color:</span> White</li>
+                                <li><span class="font-medium">GSM:</span> 15-17 GSM</li>
+                                <li><span class="font-medium">Type:</span> Soft</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="bg-[#8E1946] text-white px-4 py-2 rounded-md hover:bg-[#B54A71] w-full shadow-sm">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow animate-on-scroll hover-grow" data-animation="animate-slide-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://bornblack.in/wp-content/uploads/2024/05/restaurant-tissue-paper-500x500-1.jpg" alt="Premium Tissue Paper" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Premium Tissue Paper</h3>
+                        <p class="text-gray-600 mb-4">Luxury premium tissue paper for high-end restaurants and hotels.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Specifications:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><span class="font-medium">Size:</span> 30x30 cm</li>
+                                <li><span class="font-medium">Color:</span> White</li>
+                                <li><span class="font-medium">GSM:</span> 15-17 GSM</li>
+                                <li><span class="font-medium">Quality:</span> Premium</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="bg-[#8E1946] text-white px-4 py-2 rounded-md hover:bg-[#B54A71] w-full shadow-sm">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow animate-on-scroll hover-grow" data-animation="animate-slide-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/420826385/ZV/AM/LH/198805263/img-4670-jpeg-500x500.jpeg" alt="Printed Logo Tissue Paper" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Printed Logo Tissue Paper</h3>
+                        <p class="text-gray-600 mb-4">Custom printed tissue papers with your business logo or design.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Specifications:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><span class="font-medium">Size:</span> 27x30 cm</li>
+                                <li><span class="font-medium">Color:</span> White with custom print</li>
+                                <li><span class="font-medium">GSM:</span> 15-17 GSM</li>
+                                <li><span class="font-medium">Customization:</span> Available in 1-4 colors</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="bg-[#8E1946] text-white px-4 py-2 rounded-md hover:bg-[#B54A71] w-full shadow-sm">
+                                Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Order Section -->
+    <section class="py-12 animate-gradient text-white relative">
+        <div class="particle-container">
+            <!-- Particles will be added by JS -->
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl font-bold mb-6 animate-on-scroll" data-animation="animate-fade-in">Need Bulk Orders?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto animate-on-scroll" data-animation="animate-slide-in">
+                We offer special pricing and customization options for bulk orders. Contact us to discuss your requirements.
+            </p>
+            <a href="contact.html" class="bg-white text-[#4A071C] font-medium px-6 py-3 rounded-md hover:bg-gray-100 inline-block shadow-md shine-effect animate-on-scroll" data-animation="animate-fade-in">
+                Contact for Bulk Orders
+            </a>
+        </div>
+    </section>
+
+    <!-- Custom Printing Section -->
+    <section class="py-12 bg-white pattern-waves">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 animate-on-scroll" data-animation="animate-slide-left">
+                    <div class="h-64 rounded-lg overflow-hidden border-gradient">
+                        <img src="https://images.unsplash.com/photo-1583496597549-0fd8b25e34e2?w=500&auto=format&fit=crop&q=60" alt="Custom Printing Services" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-on-scroll" data-animation="animate-slide-right">
+                    <h2 class="text-3xl font-bold mb-6 gradient-text">Custom Printing Services</h2>
+                    <p class="text-gray-600 mb-4">
+                        We offer custom printing services for our tissue products. Add your logo, brand name, or custom design to create personalized tissue products for your business.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Custom printed tissues are perfect for restaurants, hotels, events, and promotional purposes. They help enhance your brand visibility and create a professional impression.
+                    </p>
+                    <a href="contact.html" class="inline-block bg-[#8E1946] text-white font-medium px-6 py-3 rounded-md hover:bg-[#B54A71] shadow-sm shine-effect">
+                        Inquire About Custom Printing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4A071C] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#B54A71]">SRI SAHASRA</h3>
+                    <p class="text-gray-300">
+                        Providing high-quality tissue solutions for homes, restaurants, and businesses.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-[#F091B2]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-[#F091B2]">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-[#F091B2]">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-[#F091B2]">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-[#F091B2]">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-[#F091B2]">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-gray-300 hover:text-[#F091B2]">1 Ply Tissue Paper</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-[#F091B2]">Hard Tissue Paper</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-[#F091B2]">Soft Tissue Paper</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-[#F091B2]">Premium Tissue Paper</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-[#F091B2]">Printed Logo Tissue Paper</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-[#F091B2]">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-[#F091B2]"></i>
+                            <span>Sri Sahasra Enterprises, Hyderabad</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-[#F091B2]"></i>
+                            <span>+91 7995733962</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-[#F091B2]"></i>
+                            <span>srisahasrahyd@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-id-card mr-2 text-[#F091B2]"></i>
+                            <span>GSTIN: 36DJZPG3712C1Z6</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#8E1946] mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">
+                    &copy; 2025 Sri Sahasra Enterprises. All rights reserved.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-[#F091B2]">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-[#F091B2]">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-[#F091B2]">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-[#F091B2]">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
