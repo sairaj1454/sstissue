@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Sahasra Enterprises - Premium Tissue Products</title>
+    <title>Sri Sahasra Enterprises - Premium Tissue Products Manufacturer in Hyderabad</title>
+    <meta name="description" content="Sri Sahasra Enterprises is a leading manufacturer and supplier of high-quality tissue products in Hyderabad. We offer 1 ply, hard, soft, premium, and custom printed logo tissue papers with 15-17 GSM specifications.">
+    <meta name="keywords" content="tissue paper, tissue manufacturer, tissue products, 1 ply tissue, hard tissue, soft tissue, premium tissue, printed logo tissue, Hyderabad, Sri Sahasra, GSTIN 36DJZPG3712C1Z6">
+    <meta name="author" content="Sri Sahasra Enterprises">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sri Sahasra Enterprises - Premium Tissue Products">
+    <meta property="og:description" content="Leading manufacturer of high-quality tissue products including 1 ply, hard, soft, premium, and custom printed logo tissue papers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://srisahasra.com/">
+    <meta property="og:image" content="https://srisahasra.com/images/sri-sahasra-logo.jpg">
+    <link rel="canonical" href="https://srisahasra.com/">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -240,22 +250,29 @@
                 </div>
                 <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md animate-on-scroll" data-animation="animate-slide-right">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">Send us a message</h3>
-                    <form>
+                    <form action="https://formspree.io/f/meqvbkon" method="POST">
+                        <!-- This form uses Formspree to send emails to srisahasrahyd@gmail.com -->
                         <div class="mb-4">
                             <label for="name" class="block text-gray-700 mb-2">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8E1946]">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8E1946]" required>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-gray-700 mb-2">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8E1946]">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8E1946]" required>
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8E1946]"></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8E1946]" required></textarea>
                         </div>
-                        <button type="submit" class="bg-[#4A071C] text-white font-medium px-6 py-3 rounded-md hover:bg-[#8E1946] w-full shadow-sm shine-effect">
-                            Send Message
-                        </button>
+                        <!-- Honeypot field to prevent spam -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <!-- Email subject prefix -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Sri Sahasra Homepage">
+                        <a href="contact.html" class="bg-[#4A071C] text-white font-medium px-6 py-3 rounded-md hover:bg-[#8E1946] w-full shadow-sm shine-effect text-center inline-block">
+                            Get Quote
+                        </a>
                     </form>
                 </div>
             </div>
